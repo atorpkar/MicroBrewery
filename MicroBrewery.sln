@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroBreweryWebApplication"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroBreweryWebApplication.Tests", "MicroBreweryWebApplication.Tests\MicroBreweryWebApplication.Tests.csproj", "{A98BCD5F-9459-49F3-93BC-2467B34340A9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroBreweryWebApplication2", "MicroBreweryWebApplication2\MicroBreweryWebApplication2.csproj", "{F27936F0-473F-4006-84D5-23A2A857482A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroBreweryWebApplication2.Tests", "MicroBreweryWebApplication2.Tests\MicroBreweryWebApplication2.Tests.csproj", "{7526BC73-2A0C-4524-B460-E94BA8FF1097}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{A98BCD5F-9459-49F3-93BC-2467B34340A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A98BCD5F-9459-49F3-93BC-2467B34340A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A98BCD5F-9459-49F3-93BC-2467B34340A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F27936F0-473F-4006-84D5-23A2A857482A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F27936F0-473F-4006-84D5-23A2A857482A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F27936F0-473F-4006-84D5-23A2A857482A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F27936F0-473F-4006-84D5-23A2A857482A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7526BC73-2A0C-4524-B460-E94BA8FF1097}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7526BC73-2A0C-4524-B460-E94BA8FF1097}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7526BC73-2A0C-4524-B460-E94BA8FF1097}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7526BC73-2A0C-4524-B460-E94BA8FF1097}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
