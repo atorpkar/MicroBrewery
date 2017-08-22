@@ -60,7 +60,7 @@ namespace BreweryApplication
                     Console.Write("Location: ");
                     string location = Console.ReadLine();
 
-                    microbreweries.a
+                    //microbreweries.a
 
                     break;
 
@@ -101,6 +101,8 @@ namespace BreweryApplication
             Console.WriteLine();
             Console.WriteLine("Input name of the Micro Brewery you want to search for: ");
             string microBrewerySearchString = Console.ReadLine();
+
+            // Make regular expression to search for lowercase, uppcase, partly fulfilled string, etc. 
 
             foreach (var brewery in microbreweries)
             {
@@ -163,8 +165,8 @@ namespace BreweryApplication
             Console.WriteLine("5. Register a new Micro Brewery");
             Console.WriteLine("6. Register a new beer");
             Console.WriteLine("7. Add a beer to a Micro Brewery");
-
-            Console.WriteLine("Please input your menu choice");
+            Console.WriteLine();
+            Console.Write("Please input your menu choice ");
 
             do
             {

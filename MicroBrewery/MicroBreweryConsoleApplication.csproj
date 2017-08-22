@@ -49,9 +49,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ClassLibrary1\Microbrewery.csproj">
+    <ProjectReference Include="..\ClassLibrary1\MicroBrewery.csproj">
       <Project>{45a5ed8f-9168-434f-b7b9-e4577ed9c3e7}</Project>
-      <Name>Microbrewery</Name>
+      <Name>MicroBrewery</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

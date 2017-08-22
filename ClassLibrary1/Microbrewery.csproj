@@ -40,10 +40,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Beer.cs" />
-    <Compile Include="Microbrewery.cs" />
+    <Compile Include="20 Business Layer\Beer.cs" />
+    <Compile Include="20 Business Layer\Microbrewery.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Rating.cs" />
+    <Compile Include="20 Business Layer\Rating.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="10 Application Layer\" />
+    <Folder Include="30 Data Layer\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
