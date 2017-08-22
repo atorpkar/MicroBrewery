@@ -4192,10 +4192,12 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .navbar-brand {
-  float: left;
-  padding: 15px 15px;
-  font-size: 18px;
-  line-height: 20px;
+    float: left;
+    padding: 15px 15px;
+    font-size: 18px;
+    line-height: 20px;
+    background-image: url(content/images/icon.png);
+    background-size: auto;
 }
 
 .navbar-brand:hover,
