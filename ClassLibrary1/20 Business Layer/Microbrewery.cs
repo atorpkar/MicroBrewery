@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Brewery
 {
-    public class Microbrewery
+    public class MicroBrewery
     {
         private static int breweryCounter = 0;
         public HashSet<Beer> beers;
@@ -19,7 +19,7 @@ namespace Brewery
         public double Latitude { get; set; }
         public double Longitude { get; set; }
 
-        public Microbrewery(string name, string description, string openingHours, string location, double latitude = 0.0, double longitude = 0.0)
+        public MicroBrewery(string name, string description, string openingHours, string location, double latitude = 0.0, double longitude = 0.0)
         {
             this.ID = breweryCounter;
             breweryCounter++;
@@ -32,7 +32,7 @@ namespace Brewery
             this.beers = new HashSet<Beer>();
         }
 
-        public Microbrewery(string name, string description, string openingHours, string location, double latitude, double longitude, HashSet<Beer> beers) : this(name, description, openingHours, location, latitude, longitude)
+        public MicroBrewery(string name, string description, string openingHours, string location, double latitude, double longitude, HashSet<Beer> beers) : this(name, description, openingHours, location, latitude, longitude)
         {
             this.beers = beers;  
         }

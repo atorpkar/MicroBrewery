@@ -41,7 +41,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="20 Business Layer\Beer.cs" />
-    <Compile Include="20 Business Layer\Microbrewery.cs" />
+    <Compile Include="20 Business Layer\BeerController.cs" />
+    <Compile Include="20 Business Layer\BeerRepository.cs" />
+    <Compile Include="20 Business Layer\BeerServices.cs" />
+    <Compile Include="20 Business Layer\IBeerRepository.cs" />
+    <Compile Include="20 Business Layer\MicroBrewery.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="20 Business Layer\Rating.cs" />
   </ItemGroup>

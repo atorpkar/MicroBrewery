@@ -12,29 +12,31 @@ namespace BreweryApplication
         static void Main(string[] args)
         {
 
+
+            // Beer[] beers = { b1, b2, b3 };
+
+            HashSet<Beer> beers = new HashSet<Beer>();
+
             // Create beers 
             Beer b1 = new Beer("Best beer", BeerType.Blonde, "Best blonde beer", 5.5, 0.33, 89);
             Beer b2 = new Beer("Rignes Pilsner", BeerType.Pilsner, "Crap norwegian beer", 4.7, 0.6, 79);
             Beer b3 = new Beer("Coffee Stout", BeerType.Stout, "Dark and creamy", 8.5, 0.4, 99);
 
-            // Beer[] beers = { b1, b2, b3 };
-
-            HashSet<Beer> beers = new HashSet<Beer>();
             beers.Add(b1);
             beers.Add(b2);
             beers.Add(b3);
 
             // Create micro breweries
-            Microbrewery mb1 = new Microbrewery("Andreas Mikrobryggeri", "Best brewery in town", "06:00 - 04:00", "Sandefjord", 59.128772, 10.223687);
-            Microbrewery mb2 = new Microbrewery("Micro Drewelery", "No description", "15:00 - 23:00", "Sagene, Oslo", 0.0, 0.0, beers);
-            Microbrewery mb3 = new Microbrewery("Trondheim Mikrobryggeri", "No description", "16:00 - 02:00", "Trondheim", 63.429955, 10.389635);
+            MicroBrewery mb1 = new MicroBrewery("Andreas Mikrobryggeri", "Best brewery in town", "06:00 - 04:00", "Sandefjord", 59.128772, 10.223687);
+            MicroBrewery mb2 = new MicroBrewery("Micro Drewelery", "No description", "15:00 - 23:00", "Sagene, Oslo", 0.0, 0.0, beers);
+            MicroBrewery mb3 = new MicroBrewery("Trondheim Mikrobryggeri", "No description", "16:00 - 02:00", "Trondheim", 63.429955, 10.389635);
 
             //HashSet<Microbrewery> microbreweries = new HashSet<Microbrewery>();
             //microbreweries.Add(mb1);
             //microbreweries.Add(mb2);
             //microbreweries.Add(mb3);
 
-            Microbrewery[] microbreweries = { mb1, mb2, mb3 };
+            MicroBrewery[] microbreweries = { mb1, mb2, mb3 };
 
             int menuChoice;
             menuChoice = PrintMenuAndAskForChoice();
@@ -144,7 +146,7 @@ namespace BreweryApplication
             }
         }
 
-        private static void PrintAllBreweries(Microbrewery[] microbreweries)
+        private static void PrintAllBreweries(MicroBrewery[] microbreweries)
         {
             Console.WriteLine("Registered Micro-Breweries in the system are:");
             foreach (var microbrewery in microbreweries)

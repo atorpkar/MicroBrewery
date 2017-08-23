@@ -17,7 +17,7 @@ namespace Brewery
         public double AlcoholPercentage { get; set; }
         public double Volume { get; set; }
         public decimal Price { get; set; }
-        public Microbrewery MadeBy { get; set; }
+        public MicroBrewery MadeBy { get; set; }
 
         public Beer(string name, BeerType type, string description, double alcoholPercentage, double volume, decimal price)
         {
@@ -36,6 +36,8 @@ namespace Brewery
             Console.WriteLine($"Beer: {Name} \nType: {Type} \nAlcohol Percentage: {AlcoholPercentage} \nVolume: {Volume} \nPrice: {Price}");
             Console.WriteLine($"Description: {Description}");
         }
+
+
 
     }
 
