@@ -1,15 +1,27 @@
-﻿@{
+﻿@*@model IEnumerable<MicroBreweryWebApplication2.Models.Beer>
+@using MicroBreweryWebApplication2.Models*@
+
+@{
     ViewBag.Title = "Home Page";
 }
 
 <p></p>
 
-
-
 <div class="jumbotron">
     <h1>Welcome to the MicroBrewery Application</h1>
     <!-- <p class="lead">Beer is life</p> -->
 </div>
+
+@*<div class="container">
+    <h2>List of Beers</h2>
+    <ul>
+        @foreach (Beer b in Model)
+        {
+            <li>@b.Name</li>
+        }
+
+    </ul>
+</div>*@
 
 
 <div class="container">

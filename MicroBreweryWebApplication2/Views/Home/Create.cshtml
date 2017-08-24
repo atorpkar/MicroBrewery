@@ -1,19 +1,10 @@
-﻿@*@{
-    ViewBag.Title = "User";
-}
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
+﻿@model MicroBreweryWebApplication2.Models.Beer
 
-<p></p>*@
-    
+@*@{
+    ViewBag.Title = "Add Beers and MicroBrewery";
+}*@
 
-@model MicroBreweryWebApplication2.Models.Beer
-
-@{
-    ViewBag.Title = "ADMIN PAGE";
-}
-
-<h2>Add</h2>
+<h2>Create</h2>
 
 @using (Html.BeginForm("Add", "Home"))
 {
@@ -32,12 +23,12 @@
         </div>
 
         @*<div class="form-group">
-            @Html.LabelFor(model => model.Rating, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.Rating, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.Rating, "", new { @class = "text-danger" })
-            </div>
-        </div>*@
+                @Html.LabelFor(model => model.Rating, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Rating, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.Rating, "", new { @class = "text-danger" })
+                </div>
+            </div>*@
 
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">

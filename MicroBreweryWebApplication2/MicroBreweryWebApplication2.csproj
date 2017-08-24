@@ -147,7 +147,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Controllers\FUCKYOUENTITYFRAMEWORKController.cs" />
+    <Compile Include="Controllers\BeerController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -163,6 +163,7 @@
     <Compile Include="Services\MicroBreweryRepository.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\MicroBreweryWebApplication2.Services.BeerContext.mdf" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="favicon.ico" />
@@ -201,11 +202,11 @@
     <Content Include="Views\Home\User.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Home\Create.cshtml" />
+    <Content Include="Views\Home\Search.cshtml" />
+    <Content Include="Views\Beer\Search.cshtml" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-    <Folder Include="Views\FUCKYOUENTITYFRAMEWORK\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
   </ItemGroup>

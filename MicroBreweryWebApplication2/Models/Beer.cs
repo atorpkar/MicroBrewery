@@ -23,7 +23,7 @@ namespace MicroBreweryWebApplication2.Models
         
         public decimal Price { get; set; }
 
-        public MicroBrewery MadeBy { get; set; }
+        // public MicroBrewery MadeBy { get; set; }
 
     }
 }
