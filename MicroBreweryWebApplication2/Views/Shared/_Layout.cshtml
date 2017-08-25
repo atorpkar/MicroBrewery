@@ -1,4 +1,13 @@
-﻿
+﻿@* COLOR PALETTE
+    BA5536
+    ff7058 (beer bright red)
+    f1543f (beer red)
+    324a5e (blue background)
+    152028 (modified: darker than blue background)
+    e6e9ee (grey foam)
+    f4f8ff
+    ffd05b (orange handle)
+*@
 
 <!DOCTYPE html>
 <html>
@@ -11,9 +20,10 @@
 </head>
 <body>
 
+    <nav class="navbar navbar-bright navbar-fixed-top" style="background-color: #152028">
 
-    <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
+
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="icon-bar"></span>
@@ -22,11 +32,9 @@
                 </button>
                 <img src="~/Content/beer.png" class="img-center" height="50" width="50" />  
                 @Html.ActionLink("MicroBrewery", "Index", "Home", null, new { @class = "navbar-brand" })
-
             </div>
-            
+
             <div class="navbar-collapse collapse">
-                @*<a class="navbar-brand" href="home">NAVBAR</a>*@
                 <ul class="nav navbar-nav">
                     @*<li>@Html.ActionLink("Home", "Index", "Home", new { @class = "glyphicon glyphicon-home" })</li>
                     <li>@Html.ActionLink("User", "User", "Home", new { @class = "glyphicon glyphicon-user" })</li>
@@ -35,7 +43,6 @@
                     <li>@Html.ActionLink("Admin", "Admin", "Home")</li>
                     <li>@Html.ActionLink("Create", "Create", "Home")</li>
                     <li>@Html.ActionLink("Search", "Search", "Beer")</li>
-     
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="login.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
@@ -44,7 +51,9 @@
             </div>
 
         </div>
-    </div>
+
+    </nav>
+
     <div class="container body-content">
         @RenderBody()
         <hr />
@@ -56,5 +65,6 @@
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
+
 </body>
 </html>
